@@ -36,9 +36,24 @@ p {
 .navbar {
     height: 110px;
     background-color: #fff;
+    padding: 40px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    width: 200px;
+}
+
+.navbar-collapse {
+    justify-content: end;
+    background-color: #fff;
+}
+
+.navbar-toggler{
+    background-color: #985eba7d;
 }
 
 .navbar-expand-sm {
@@ -116,6 +131,10 @@ p {
 }
 
 /* Novedades */
+.novedades {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .card {
     border: 0px;
 }
@@ -157,6 +176,11 @@ p {
     color: #fff;
 }
 
+/* Como ayudar */
+.clase-ayuda {
+    align-items: flex-start;
+}
+
 /* Contacto */
 .formulario {
     background-color: #995EBA;
@@ -181,6 +205,10 @@ p {
 }
 
 @media (max-width: 576px) {
+    .navbar {
+        padding: 20px;
+    }
+
     .slider {
         margin-top: 160px;
     }
@@ -216,7 +244,7 @@ p {
     }
 
     .formulario {
-        padding: 20px;
+        padding: 2rem;
     }
 }
 

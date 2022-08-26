@@ -21,27 +21,33 @@
 
 <body>
     <!-- Inicia Navbar -->
-    <nav class="navbar navbar-expand-sm">
-        <!-- Brand/logo -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!-- Brand -->
         <a class="navbar-brand" href="../index.html">
-            <img src="../imagenes/logo_cpc.svg" alt="logo" style="width:200px;">
-        </a>
+        <img src="../imagenes/logo_cpc.svg" alt="logo"></a>
 
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Quiénes Somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Qué hacemos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cómo ayudar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-        </ul>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Qué hacemos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/ayudar.html">Cómo ayudar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Fin Navbar -->
 
@@ -122,13 +128,15 @@
     <!-- Inicio donar -->
     <div class="jumbotron donar">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
                 <h3 style="font-size: 24px; color: #fff; line-height: 34px; margin-top: 20px;">Su ayuda es muy
                     importante para nuestros chicos y para el crecimiento de nuestra institución</h3>
             </div>
-            <div class="col-md-4">
-                <a class="btn btn-light" href="#">Colaborar</a>
+            <div class="col-md-2 boton-donar">
+                <a class="btn btn-light" href="../pages/ayudar.html">Colaborar</a>
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
     <!-- Fin donar -->
@@ -138,7 +146,7 @@
     <div class="conteiner-fluid formulario">
         <form action="enviar.php" method="post" enctype="text/plain">
             <div class="row row-col-6">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-8">
                     <h2>Contactanos</h2>
                     <input type="text" class="form-control" placeholder="Nombre y Apellido">
                     <input type="text" class="form-control" placeholder="Teléfono">
@@ -146,7 +154,7 @@
                     <textarea name="mensaje" class="form-control" cols="30" rows="4" placeholder="Mensaje"></textarea>
                     <button type="submit" class="btn btn-outline-light">ENVIAR</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h2>Seguinos</h2>
                     <a href="https://www.instagram.com" target="_blank"><i
                             class="fa-brands fa-square-instagram"></i></a>
