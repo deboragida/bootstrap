@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500;700&display=swap);
 * {
   margin: 0;
   padding: 0;
@@ -17,4 +18,60 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: black;
+}
+
+.slider {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.slider_texto {
+  background-color: #995EBA;
+  border-radius: 10px;
+  padding: 60px 80px 60px 80px;
+}
+
+.slider_foto {
+  background-image: url(./imagenes/slide_foto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 10px;
+  margin-left: -30px;
+}
+
+.navbar {
+  height: 110px;
+  background-color: white;
+  padding: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  width: 200px;
+}
+
+.navbar-collapse {
+  justify-content: end;
+  background-color: white;
+}
+
+.navbar-toggler {
+  background-color: #73478B;
+}
+
+.navbar-expand-sm {
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.nav-link {
+  color: #995EBA;
+}
+
+.nav-link:hover {
+  color: #73478B;
 }/*# sourceMappingURL=estilos.css.map */
