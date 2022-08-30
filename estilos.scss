@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500;700&display=swap);
+
+// Paleta de colores
+$color1: #995EBA;
+$color2: #91BBF2;
+$color3: #73478B;
+$color4: #F2490C;
+$color5: white;
+$color6: black;
+
+// Fonts
+$font1: 'Rubik', sans-serif;
+$font2: 'Roboto', sans-serif; 
+
+// Dimensiones
+$xs: 16px;
+$small: 20px;
+$med: 30px;
+$large: 40px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: $font1;
+    font-weight: 600;
+    font-size: $large ;
+    color: $color5;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: $font2;
+    font-size: $xs;
+    color: $color6;
+}
+
+
+
+
+
+
+
+@import "_menu";
