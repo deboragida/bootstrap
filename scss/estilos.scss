@@ -1,30 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500;700&display=swap);
+
+@mixin i_slides_style {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+/*Tamaños tipograficos*/
+$font-sizes: (
+    "small": 16px,
+    "medium": 20px,
+    "large": 40px
+)
+   
+/* Paleta de colores*/
+$color1: #995EBA;
+$color2: #91BBF2;
+$color3: #73478B;
+$color4: #F2490C;
+$color5: white;
+$color6: green;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* <<<< ESTILOS TEXTOS y BOTONES >>>> */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Estilos textos y botones */
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    color: #fff;
+    font: {
+        family: 'Rubik',
+            sans-serif;
+        weight: 400;
+    }
+
+    color: $color5;
     margin-bottom: 20px;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font: {
+        family: 'Roboto',
+            sans-serif;
+        weight: 400;
+        size: 16px
+    }
+
     line-height: 24px;
-    color: #000000;
+    color: $color6;
 }
 
 .btn {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik',
+        sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
@@ -32,76 +69,34 @@ p {
     padding: 10px 20px;
 }
 
-/* Navbar */
-.navbar {
-    height: 110px;
-    background-color: #fff;
-    padding: 40px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.navbar-brand {
-    width: 200px;
-}
-
-.navbar-collapse {
-    justify-content: end;
-    background-color: #fff;
-}
-
-.navbar-toggler{
-    background-color: #985eba7d;
-}
-
-.navbar-expand-sm {
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.nav-link {
-    color: #995EBA;
-}
-
-.nav-link:hover {
-    color: #73478B;
-}
-
 /* Slides */
 .slider {
     margin-top: 30px;
     margin-bottom: 60px;
-}
 
-.slider_texto {
-    background-color: #995EBA;
-    border-radius: 10px;
-    padding: 60px 80px 60px 80px;
-}
+    .slider_texto {
+        background-color: $color1;
+        border-radius: 10px;
+        padding: 60px 80px 60px 80px;
+    }
 
-.slider_foto {
-    background-image: url(./imagenes/slide_foto.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    border-radius: 10px;
+    .slider_foto {
+        background-image: url(../imagenes/i_home.jpg);
+        @include i_slides_style(
+    );
     margin-left: -30px;
+}
 }
 
 .slide_quienes {
-    background-image: url(./imagenes/slide_foto.jpg);
-    background-position: center;
-    height: 400px;
-    background-size: cover;
-    border-radius: 10px;
+    background-image: url(../imagenes/slide_foto.jpg);
+    @include i_slides_style();
     margin: 30px 0px 40px 0px;
 }
 
 /* Areas de tratamiento */
 .areas {
-    background-color: #91BBF2;
+    background-color: $color2;
     align-items: center;
     padding: 80px 80px;
 }
@@ -135,12 +130,13 @@ p {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .card {
     border: 0px;
 }
 
 .card-title {
-    color: #995EBA;
+    color: $color1;
 }
 
 /* Nosotros */
@@ -162,7 +158,7 @@ p {
 
 /* Misión y Visión */
 .mision {
-    background-color: #91BBF2;
+    background-color: $color2;
     padding: 80px 80px;
 }
 
@@ -173,7 +169,7 @@ p {
 }
 
 .texto_mision p {
-    color: #fff;
+    color: $color5;
 }
 
 /* Como ayudar */
@@ -183,7 +179,7 @@ p {
 
 /* Contacto */
 .formulario {
-    background-color: #995EBA;
+    background-color: $color1;
     padding: 60px 80px;
 }
 
@@ -196,11 +192,11 @@ p {
     text-decoration: none;
     font-size: 30px;
     letter-spacing: 10px;
-    color: #fff;
+    color: $color5;
 }
 
 .footer {
-    background-color: #73478B;
+    background-color: $color3;
     text-align: center;
 }
 
@@ -258,3 +254,5 @@ p {
         padding: 30px 50px 30px 30px;
     }
 }
+
+@import "menu";
